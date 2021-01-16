@@ -41,7 +41,7 @@ def handler(t):
 
 # setting up the wifi network
 wifi_ap = network.WLAN(network.AP_IF)
-wifi_ap.config(essid="ESP-Said")
+wifi_ap.config(essid="ESP-Said", authmode=3 ,password="123456798")
 wifi_ap.config(max_clients=2)
 wifi_ap.ifconfig(('192.168.4.1', '255.255.255.0', '192.168.4.1', '8.8.8.8'))
 wifi_ap.active(True)
