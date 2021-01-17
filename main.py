@@ -140,6 +140,9 @@ while True:
     # print(request)
     request = str(request)[7:10]
     print('[HTTP] Got < %s > request' % request)
+    conn.send('HTTP/1.1 200 OK\n')
+    conn.send('Content-Type: text/html\n')
+    conn.send('\n')
     if request == WEB_DEC:
         pressed_pb = Pin(DEC_PIN)
         handler(None)
