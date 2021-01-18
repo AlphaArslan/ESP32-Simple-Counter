@@ -29,6 +29,16 @@ WEB_DEC = "dec"                     # decrement
 WEB_INC = "inc"                     # increment
 WEB_RST = "rst"                     # reset
 WEB_RES = "res"                     # result
+WEB_0 = "zer"
+WEB_1 = "one"
+WEB_2 = "two"
+WEB_3 = "thr"
+WEB_4 = "fou"
+WEB_5 = "fiv"
+WEB_6 = "six"
+WEB_7 = "sev"
+WEB_8 = "eig"
+WEB_9 = "nin"
 
 # wifi access point parameters
 AP_NAME = "ESP-Said"
@@ -156,6 +166,46 @@ while True:
         handler(None)
         conn.sendall(str(counter_value))
     elif request == WEB_RES:
+        conn.sendall(str(counter_value))
+    elif request == WEB_0:
+        counter_value = 0
+        update_display(counter_value)
+        conn.sendall(str(counter_value))
+    elif request == WEB_1:
+        counter_value = 1
+        update_display(counter_value)
+        conn.sendall(str(counter_value))
+    elif request == WEB_2:
+        counter_value = 2
+        update_display(counter_value)
+        conn.sendall(str(counter_value))
+    elif request == WEB_3:
+        counter_value = 3
+        update_display(counter_value)
+        conn.sendall(str(counter_value))
+    elif request == WEB_4:
+        counter_value = 4
+        update_display(counter_value)
+        conn.sendall(str(counter_value))
+    elif request == WEB_5:
+        counter_value = 5
+        update_display(counter_value)
+        conn.sendall(str(counter_value))
+    elif request == WEB_6:
+        counter_value = 6
+        update_display(counter_value)
+        conn.sendall(str(counter_value))
+    elif request == WEB_7:
+        counter_value = 7
+        update_display(counter_value)
+        conn.sendall(str(counter_value))
+    elif request == WEB_8:
+        counter_value = 8
+        update_display(counter_value)
+        conn.sendall(str(counter_value))
+    elif request == WEB_9:
+        counter_value = 9
+        update_display(counter_value)
         conn.sendall(str(counter_value))
     else:
         conn.sendall("-1")
