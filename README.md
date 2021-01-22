@@ -60,7 +60,7 @@ We used the __74LS47N__ BCD to seven segment decoder. We used common anode displ
 
 This schematic was done by my teammate [Seif](https://github.com/princesiefshama)
 <p align="center">
-  <img width="800" height="550" src="imgs/schematic.PNG">
+  <img width="800" height="550" src="imgs/schematic.png">
 </p>
 
 __NOTE:__ the ESP32 is powered through the USB. The rest of the circuitry (decoder and display) are powered by external 5V power supply.
