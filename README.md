@@ -49,7 +49,7 @@ To approach the problem, I tried to create a script for each control method sepa
 
 For the two scripts being built on __interrupts__ and __super-loop__, merging them to create [main.py](https://github.com/AlphaArslan/ESP32-Simple-Counter/blob/master/src/main.py) was a trouble-free process. Now, __main.py__ can handle both control methods smoothly. The final architecture is a super-loop cut by interrupts. The super-loop is serving coming requests and the interrupts are serving button presses.
 <p align="center">
-  <img width="800" height="550" src="imgs/software_arch.png">
+  <img width="800" height="550" src="imgs/software_arch.PNG">
 </p>
 
 -----
@@ -60,7 +60,7 @@ We used the __74LS47N__ BCD to seven segment decoder. We used common anode displ
 
 This schematic was done by my teammate [Seif](https://github.com/princesiefshama)
 <p align="center">
-  <img width="800" height="550" src="imgs/schematic.png">
+  <img width="800" height="550" src="imgs/schematic.PNG">
 </p>
 
 __NOTE:__ the ESP32 is powered through the USB. The rest of the circuitry (decoder and display) are powered by external 5V power supply.
