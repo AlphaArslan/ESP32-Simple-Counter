@@ -8,9 +8,10 @@ An exploration and entry point project to Micropython.
 ## Table of Content
 - [Problem Statement.](#Problem-Statement)
 - [Getting Started.](#Getting-Started)
-- [Software Architecture](#Software-Architecture).
-- Hardware Layout.
-- Tutorials and Videos.
+- [Software Architecture.](#Software-Architecture).
+- [Hardware Layout.](#Hardware-Layout)
+- [Mobile Application](#Mobile-Application)
+- [Tutorials and Videos.](#Tutorials-and-Videos)
 
 -----
 ## Problem Statement
@@ -47,3 +48,27 @@ To approach the problem, I tried to create a script for each control method sepa
 - the [wifi_control.py](https://github.com/AlphaArslan/ESP32-Simple-Counter/blob/master/src/wifi_control.py) script to implement the __wireless control__ method. Here, I used the __super-loop__ architecture to wait for and handle the requests coming from the __mobile application__.
 
 For the two scripts being built on __interrupts__ and __super-loop__, merging them to create [main.py](https://github.com/AlphaArslan/ESP32-Simple-Counter/blob/master/src/main.py) was a trouble-free process. Now, __main.py__ can handle both control methods smoothly. The final architecture is a super-loop cut by interrupts. The super-loop is serving coming requests and the interrupts are serving button presses.
+<p align="center">
+  <img width="800" height="550" src="imgs/software_arch.png">
+</p>
+
+-----
+## Hardware Layout
+Connecting push buttons to the ESP32 is a straight forward process. However, there can be an argument about connecting the seven segment display. One can suggest connecting the display directly to the ESP32. On the other hand, I saw that using a decoder in between the ESP32 and the display was far better in terms of safety and the number of ESP32 pins needed to control the display.
+
+We used the __74LS47N__ BCD to seven segment decoder. We used common anode display.
+
+This schematic was done by my teammate [Seif](https://github.com/princesiefshama)
+<p align="center">
+  <img width="800" height="550" src="imgs/schematic.png">
+</p>
+
+__NOTE:__ the ESP32 is powered through the USB. The rest of the circuitry (decoder and display) are powered by external 5V power supply.
+
+-----
+## Mobile Application
+The application was done by my teammate [Sief](https://github.com/princesiefshama). More info should be found on [his repository]().
+
+-----
+## Tutorials and Videos
+As always, tutorials can be found on my [YouTube Channel](https://www.youtube.com/c/alphabitss) as well as my [Facebook Page](https://www.facebook.com/AlphaBITss).
