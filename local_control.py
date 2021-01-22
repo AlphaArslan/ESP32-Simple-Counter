@@ -73,6 +73,8 @@ dec_pb = Pin(DEC_PIN, Pin.IN , pull=Pin.PULL_UP)
 dec_pb.irq(handler=debounce, trigger=Pin.IRQ_FALLING)
 inc_pb = Pin(INC_PIN, Pin.IN , pull=Pin.PULL_UP)
 inc_pb.irq(handler=debounce, trigger=Pin.IRQ_FALLING)
+rst_pb = Pin(RST_PIN, Pin.IN , pull=Pin.PULL_UP)
+rst_pb.irq(handler=debounce, trigger=Pin.IRQ_FALLING)
 
 A_pin = Pin(DCDR_A, Pin.OUT)
 B_pin = Pin(DCDR_B, Pin.OUT)
