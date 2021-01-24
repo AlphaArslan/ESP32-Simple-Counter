@@ -76,7 +76,7 @@ As always, tutorials can be found on my [YouTube Channel](https://www.youtube.co
 The [project playlist](https://www.youtube.com/playlist?list=PLVTXC7QFRDzoaqY00hgMyqsOzOs8PjT9N) includes following videos:
 - [__Demo__](https://www.youtube.com/watch?v=we-t3vGldps&list=PLVTXC7QFRDzoaqY00hgMyqsOzOs8PjT9N&index=1): Casual video showing the project during development.
 - [__Code Hints__](https://www.youtube.com/watch?v=R1ISMe32KwE&list=PLVTXC7QFRDzoaqY00hgMyqsOzOs8PjT9N&index=2): Trying to provide help in form of hints and useful resources for fellow colleagues.
-- [__Button Debouncing__](https://www.youtube.com/watch?v=ZSD9jzvYNoI&list=PLVTXC7QFRDzoaqY00hgMyqsOzOs8PjT9N&index=3): Explaining the phenomena of button bouncing and how to deal with in the context of our project.
+- [__Button Debouncing__](https://www.youtube.com/watch?v=ZSD9jzvYNoI&list=PLVTXC7QFRDzoaqY00hgMyqsOzOs8PjT9N&index=3): Explaining the phenomena of button bouncing and how to deal with it in the context of our project.
 - [__Web Server__](https://www.youtube.com/watch?v=ZSD9jzvYNoI&list=PLVTXC7QFRDzoaqY00hgMyqsOzOs8PjT9N&index=4): As some colleagues struggled in this part, this video with an attempt to help and guide them.
 - [__Code Explanation__](https://www.youtube.com/watch?v=ZSD9jzvYNoI&list=PLVTXC7QFRDzoaqY00hgMyqsOzOs8PjT9N&index=5): Line by line explanation for my final code.
 - [__Final Demo__](https://www.youtube.com/watch?v=ZSD9jzvYNoI&list=PLVTXC7QFRDzoaqY00hgMyqsOzOs8PjT9N&index=6): Showing the project on its final form and represent all features.
